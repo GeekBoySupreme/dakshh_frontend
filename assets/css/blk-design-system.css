@@ -17638,7 +17638,7 @@ hr.line-deafult {
 }
 
 .hero-image {
-  background-image: linear-gradient(to bottom, transparent, #070714), url("https://i.imgur.com/zczvydB.jpg");
+  background-image: linear-gradient(to bottom, transparent, #070714), url("https://cdn.dribbble.com/users/3178178/screenshots/7202207/media/3ca8d9e997cca72c5bb418a73e046a64.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -20849,37 +20849,3 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 /*# sourceMappingURL=kit-free.css.map */
 
-
-
-
-
-
-
-/* Countdown Timer */
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-}
-
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: rgb(25, 174, 194);
-	display: inline-block;
-}
-
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: rgb(0, 110, 129);
-	display: inline-block;
-}
-
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
-}
