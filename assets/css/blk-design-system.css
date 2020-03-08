@@ -527,6 +527,12 @@ mark,
   height: auto;
 }
 
+.img-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #171941;
@@ -2324,7 +2330,7 @@ textarea.form-control {
   text-decoration: none;
 }
 
-.btn:focus,
+.p:focus,
 .btn.focus {
   outline: 0;
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
@@ -4477,6 +4483,10 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .hero-text {
+    width: 96vw!important;
+  }
 }
 
 @media (min-width: 576px) {
@@ -4813,6 +4823,15 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   background-color: #f6f9fc;
   border-bottom: 0.0625rem solid rgba(34, 42, 66, 0.05);
+}
+
+.card-header h6 {
+  width: 90%;
+  word-break: normal;
+  text-align: center;
+  text-transform: none;
+  color: #e14eca!important;
+  margin: 0 auto;
 }
 
 .card-header:first-child {
@@ -10506,7 +10525,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .btn.btn-simple,
 .navbar .navbar-nav>a.btn.btn-simple {
   color: #344675;
-  border-color: #344675;
+  border-color: transparent;
   background: transparent;
 }
 
@@ -10527,7 +10546,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 
 .btn.btn-simple.active,
 .navbar .navbar-nav>a.btn.btn-simple.active {
-  border-color: #344675 !important;
+  border-color: transparent !important;
 }
 
 .btn.btn-simple.active:hover,
@@ -10539,7 +10558,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .navbar .navbar-nav>a.btn.btn-simple.active:active,
 .navbar .navbar-nav>a.btn.btn-simple.active:not(:disabled):not(.disabled):active {
   color: #ffffff;
-  border-color: #344675;
+  border-color: transparent;
   background-image: linear-gradient(to bottom left, #344675, #263148, #344675) !important;
   background-image: -webkit-linear-gradient(to bottom left, #344675, #263148, #344675) !important;
   background-image: -o-linear-gradient(to bottom left, #344675, #263148, #344675) !important;
@@ -11494,8 +11513,9 @@ fieldset[disabled] .btn-neutral.active {
 
 .btn-neutral.btn-simple {
   color: #ffffff;
-  border-color: #ffffff;
-  background: transparent;
+  border-color: transparent;
+  background: rgb(0,101,202)!important;
+  margin: 0 5px;
 }
 
 .btn-neutral.btn-simple:hover,
@@ -20372,7 +20392,6 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 
 .card.card-coin {
-  border: 2px solid #344675;
 }
 
 .card.card-coin .card-header {
