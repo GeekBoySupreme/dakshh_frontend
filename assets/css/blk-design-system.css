@@ -4910,13 +4910,14 @@ input[type="button"].btn-block {
   border-bottom: 0.0625rem solid rgba(34, 42, 66, 0.05);
 }
 
-.card-header h6 {
+.card-header p {
   width: 90%;
   word-break: normal;
   text-align: center;
   text-transform: none;
   color: #e14eca !important;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .card-header:first-child {
