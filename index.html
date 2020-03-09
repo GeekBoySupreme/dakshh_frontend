@@ -102,6 +102,11 @@
               </a>
             </li>
             <li class="nav-item p-0">
+              <a href="#regForm" class="nav-link">
+                <h4>Register</h4>
+              </a>
+            </li>
+            <li class="nav-item p-0">
               <button
                 class="btn btn-info btn-round"
                 data-toggle="modal"
@@ -624,7 +629,7 @@
       </section>
 
       <div class="main">
-        <div class="section section-signup">
+        <div class="section section-signup" id="regForm">
           <div class="container">
             <div class="squares square-1"></div>
             <div class="squares square-2"></div>
@@ -676,6 +681,7 @@
                           type="text"
                           class="form-control"
                           placeholder="Full Name"
+                          required
                         />
                       </div>
                       <div class="input-group">
@@ -688,6 +694,7 @@
                           type="text"
                           placeholder="Email"
                           class="form-control"
+                          required
                         />
                       </div>
                       <div class="input-group">
@@ -697,9 +704,36 @@
                           </div>
                         </div>
                         <input
-                          type="text"
+                          type="password"
                           class="form-control"
                           placeholder="Password"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-phone"></i>
+                          </div>
+                        </div>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-badge"></i>
+                          </div>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="College"
+                          required
                         />
                       </div>
                       <div class="form-check text-left">
@@ -710,14 +744,15 @@
                           <a href="javascript:void(0)">terms and conditions</a>.
                         </label>
                       </div>
+                      <div class="card-footer">
+                        <button
+                          type="submit"
+                          class="btn btn-info btn-round btn-lg"
+                        >
+                          Register
+                        </button>
+                      </div>
                     </form>
-                  </div>
-                  <div class="card-footer">
-                    <a
-                      href="javascript:void(0)"
-                      class="btn btn-info btn-round btn-lg"
-                      >Get Started</a
-                    >
                   </div>
                 </div>
               </div>
@@ -747,21 +782,10 @@
                 <i class="tim-icons icon-simple-remove text-white"></i>
               </button>
               <div class="text-muted text-center ml-auto mr-auto">
-                <h3 class="mb-0">Sign in with</h3>
+                <h3 class="mb-0">Sign in</h3>
               </div>
             </div>
             <div class="modal-body">
-              <div class="btn-wrapper text-center">
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <img src="assets/img/github.svg" />
-                </a>
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <img src="assets/img/google.svg" />
-                </a>
-              </div>
-              <div class="text-center text-muted mb-4 mt-3">
-                <small>Or sign in with credentials</small>
-              </div>
               <form role="form">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
@@ -791,13 +815,7 @@
                     />
                   </div>
                 </div>
-                <div class="form-check mt-3">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" checked />
-                    <span class="form-check-sign"></span>
-                    Remember me!
-                  </label>
-                </div>
+                <a href="">Forgot Password?</a>
                 <div class="text-center">
                   <button type="button" class="btn btn-info my-4">
                     Sign in
