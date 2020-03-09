@@ -1,146 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <title>
+      Profile | Dakshh
+    </title>
+    <!--     Fonts and icons     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="./assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <title>
-    Profile | Dakshh
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!-- Nucleo Icons -->
-  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link href="./assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="./assets/demo/demo.css" rel="stylesheet" />
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-</head>
-
-<body class="profile-page">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" data-placement="bottom" target="_blank">
-          <span>Dakshh •</span> The Tech Fest &nbsp;&nbsp;
-        </a>
-        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation">
-        <div class="navbar-collapse-header">
-          <div class="row">
-            <div class="col-6 collapse-brand">
-              <a>
-                Dakshh
-              </a>
-            </div>
-            <div class="col-6 collapse-close text-right">
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="tim-icons icon-simple-remove"></i>
-              </button>
+  <body class="profile-page">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-transparent "
+      color-on-scroll="100"
+    >
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" data-placement="bottom" target="_blank">
+            <span>Dakshh •</span> The Tech Fest &nbsp;&nbsp;
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation-index"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navigation"
+        >
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a>
+                  Dakshh
+                </a>
+              </div>
+              <div class="col-6 collapse-close text-right">
+                <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-toggle="collapse"
+                  data-target="#navigation"
+                  aria-controls="navigation-index"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="tim-icons icon-simple-remove"></i>
+                </button>
+              </div>
             </div>
           </div>
+          <ul class="navbar-nav">
+            <li class="nav-item p-0">
+              <a href="#" class="nav-link">
+                <h4>Events</h4>
+              </a>
+            </li>
+            <li class="nav-item p-0">
+              <a href="#" class="nav-link">
+                <h4>Team</h4>
+              </a>
+            </li>
+            <li class="nav-item p-0">
+              <a href="#" class="nav-link">
+                <h4>About</h4>
+              </a>
+            </li>
+            <li class="nav-item p-0">
+              <button
+                class="btn btn-info btn-round"
+                data-toggle="modal"
+                data-target="#myModal2"
+              >
+                Sign In
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav">
-          <li class="nav-item p-0">
-            <a href="#" class="nav-link">
-               <h4>Events</h4>
-            </a>
-          </li>
-          <li class="nav-item p-0">
-            <a href="#" class="nav-link">
-               <h4>Team</h4>
-            </a>
-          </li>
-          <li class="nav-item p-0">
-            <a href="#" class="nav-link">
-               <h4>About</h4>
-            </a>
-          </li>
-          <li class="nav-item p-0">
-            <button class="btn btn-info btn-round" data-toggle="modal" data-target="#myModal2">
-              Sign In
-            </button>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
-  <!-- End Navbar -->
-  <div class="wrapper">
-    <div class="page-header">
-      <img src="./assets/img/dots.png" class="dots">
-      <img src="./assets/img/path4.png" class="path">
-      <div class="container align-items-center">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <h1 class="profile-title text-left">Mike Scheinder</h1><p>&nbsp;</p>
-            <h5 class="text-on-back">01</h5>
-            <p class="profile-description">Offices parties lasting outward nothing age few resolve. Impression to discretion understood to we interested he excellence. Him remarkably use projection collecting. Going about eat forty world has round miles.</p>
-            <div class="btn-wrapper profile pt-3">
-              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-twitter btn-round" data-toggle="tooltip" data-original-title="Follow us">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-facebook btn-round" data-toggle="tooltip" data-original-title="Like us">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-dribbble  btn-round" data-toggle="tooltip" data-original-title="Follow us">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </div>
-            </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+      <div class="page-header">
+        <img src="./assets/img/dots.png" class="dots" />
+        <img src="./assets/img/path4.png" class="path" />
+        <div class="container align-items-center">
+          <div class="row">
+            <!--PROFILE INFO GOES HERE-->
             <div class="col-lg-5 col-md-6 ml-auto mr-auto">
               <div class="card">
                 <div class="card-header">
                   <div class="card-image">
-                    <h4 class="title">Mark Johnson</h4>
+                    <h3 class="title">Mark Johnson</h3>
                     <a href="javascript:;">
-                      <img class="img-fluid rounded" src="https://cdn.dribbble.com/users/310241/screenshots/6615139/________18_.png"/>
+                      <img
+                        class="img-fluid rounded"
+                        src="https://cdn.dribbble.com/users/310241/screenshots/6615139/________18_.png"
+                      />
                     </a>
                   </div>
                 </div>
                 <div class="card-body">
-                  <hr class="line-primary">
-                  <h3 class="job-title">UX Designer</h3>
-                  <div class="table-responsive">
-                    <table class="table tablesorter " id="plain-table">
+                  <hr class="line-primary" />
+                  <h3 class="job-title">Heritage Institute of Technology</h3>
+                  <div class="table-responsive overflow-auto">
+                    <table class="table tablesorter" id="plain-table">
                       <tbody>
                         <tr>
                           <td class="text-left">
-                            <i class="tim-icons icon-atom"></i> Skills
+                            <i class="fa fa-envelope"></i>
                           </td>
                           <td class="text-right">
-                            UI, UX, Creativity
+                            mark@johnson.com<br />
+                            <!--Use conditional rendering to toggle b/w verified and unverified-->
+                            <!--Use JS function to trigger API call to send verification mail-->
+                            <span
+                              class="verify-btn"
+                              data-toggle="modal"
+                              data-target="#verificationModal"
+                              onclick="verifyEmail()"
+                              >Verify Email!</span
+                            >
+                            <!--<span class="text-success">
+                                <i class="fa fa-check"></i>
+                                Verified
+                              </span>-->
                           </td>
                         </tr>
                         <tr>
                           <td class="text-left">
-                            <i class="tim-icons icon-user-run"></i> Hobbies
+                            <i class="fa fa-phone"></i>
                           </td>
                           <td class="text-right">
-                            Photography
+                            1234567890<br />
+                            <!--Use conditional rendering to toggle b/w verified and unverified-->
+                            <!--Use JS function to trigger API call to send OTP -->
+                            <span
+                              class="verify-btn"
+                              data-toggle="modal"
+                              data-target="#verificationModal"
+                              onclick="verifyPhone()"
+                              >Verify Phone!</span
+                            >
+                            <!--<span class="text-success">
+                                <i class="fa fa-check"></i>
+                                Verified
+                              </span> -->
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                 
                 </div>
               </div>
             </div>
+            <!--TEAMS GO HERE-->
+            <div class="col-lg-6 col-md-6">
+              <h1 class="profile-title text-left">Mike Scheinder</h1>
+              <p>&nbsp;</p>
+              <h5 class="text-on-back">01</h5>
+              <p class="profile-description">
+                Offices parties lasting outward nothing age few resolve.
+                Impression to discretion understood to we interested he
+                excellence. Him remarkably use projection collecting. Going
+                about eat forty world has round miles.
+              </p>
+              <div class="btn-wrapper profile pt-3">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/creativetim"
+                  class="btn btn-icon btn-twitter btn-round"
+                  data-toggle="tooltip"
+                  data-original-title="Follow us"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/creativetim"
+                  class="btn btn-icon btn-facebook btn-round"
+                  data-toggle="tooltip"
+                  data-original-title="Like us"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://dribbble.com/creativetim"
+                  class="btn btn-icon btn-dribbble  btn-round"
+                  data-toggle="tooltip"
+                  data-original-title="Follow us"
+                >
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </div>
+            </div>
           </div>
-
-
         </div>
       </div>
       <section>
@@ -149,14 +238,25 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="card card-plain">
-                <h3>Create Team</h3>
+                  <h3>Create Team</h3>
                   <div class="card-body">
                     <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" value="Create Team">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="Create Team"
+                        />
                       </div>
-                      <button type="submit" class="btn btn-primary btn-round float-right" rel="tooltip" data-original-title="Can't wait for your message" data-placement="right">Create</button>
-                
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-round float-right"
+                        rel="tooltip"
+                        data-original-title="Can't wait for your message"
+                        data-placement="right"
+                      >
+                        Create
+                      </button>
                     </form>
                   </div>
                 </div>
@@ -164,20 +264,31 @@
 
               <div class="col-lg-6">
                 <div class="card card-plain">
-                <h3>Join Team</h3>
+                  <h3>Join Team</h3>
                   <div class="card-body">
                     <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" value="Join Team">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="Join Team"
+                        />
                       </div>
-                      <button type="submit" class="btn btn-primary btn-round float-right" rel="tooltip" data-original-title="Can't wait for your message" data-placement="right">Join</button>
-                
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-round float-right"
+                        rel="tooltip"
+                        data-original-title="Can't wait for your message"
+                        data-placement="right"
+                      >
+                        Join
+                      </button>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </section>
 
@@ -186,36 +297,62 @@
           <div class="row">
             <div class="col-lg-6">
               <lottie-player
-                  src="https://assets5.lottiefiles.com/packages/lf20_nwJPNE.json"  background="transparent"  speed="1"  style="width: auto; height: auto;"  loop  autoplay >
+                src="https://assets5.lottiefiles.com/packages/lf20_nwJPNE.json"
+                background="transparent"
+                speed="1"
+                style="width: auto; height: auto;"
+                loop
+                autoplay
+              >
               </lottie-player>
             </div>
 
             <div class="col-md-6">
               <p>&nbsp;</p>
               <div class="pl-md-5">
-                <h1>Large
-                  Achivements</h1> 
-                
-                <p>I should be capable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. </p>
-                <br/>
-                <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray.</p>
-                <br/>
-                <a href="#" class="font-weight-bold text-info mt-5">Events <i class="tim-icons icon-minimal-right text-info"></i></a>
+                <h1>Large Achivements</h1>
+
+                <p>
+                  I should be capable of drawing a single stroke at the present
+                  moment; and yet I feel that I never was a greater artist than
+                  now.
+                </p>
+                <br />
+                <p>
+                  When, while the lovely valley teems with vapour around me, and
+                  the meridian sun strikes the upper surface of the impenetrable
+                  foliage of my trees, and but a few stray.
+                </p>
+                <br />
+                <a href="#" class="font-weight-bold text-info mt-5"
+                  >Events <i class="tim-icons icon-minimal-right text-info"></i
+                ></a>
                 <p>&nbsp;</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </div>
 
     <!-- Form Modal -->
-    <div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div
+      class="modal fade modal-black"
+      id="myModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header justify-content-center">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
               <i class="tim-icons icon-simple-remove text-white"></i>
             </button>
             <div class="text-muted text-center ml-auto mr-auto">
@@ -225,10 +362,10 @@
           <div class="modal-body">
             <div class="btn-wrapper text-center">
               <a href="#" class="btn btn-neutral btn-icon">
-                <img src="assets/img/github.svg">
+                <img src="assets/img/github.svg" />
               </a>
               <a href="#" class="btn btn-neutral btn-icon">
-                <img src="assets/img/google.svg">
+                <img src="assets/img/google.svg" />
               </a>
             </div>
             <div class="text-center text-muted mb-4 mt-3">
@@ -242,7 +379,11 @@
                       <i class="tim-icons icon-email-85"></i>
                     </span>
                   </div>
-                  <input class="form-control" placeholder="Email" type="email">
+                  <input
+                    class="form-control"
+                    placeholder="Email"
+                    type="email"
+                  />
                 </div>
               </div>
               <div class="form-group">
@@ -252,18 +393,72 @@
                       <i class="tim-icons icon-key-25"></i>
                     </span>
                   </div>
-                  <input class="form-control" placeholder="Password" type="password">
+                  <input
+                    class="form-control"
+                    placeholder="Password"
+                    type="password"
+                  />
                 </div>
               </div>
               <div class="form-check mt-3">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" checked>
+                  <input class="form-check-input" type="checkbox" checked />
                   <span class="form-check-sign"></span>
                   Remember me!
                 </label>
               </div>
               <div class="text-center">
                 <button type="button" class="btn btn-info my-4">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+    <!-- Verification Modal -->
+    <div
+      class="modal fade modal-black"
+      id="verificationModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="verificationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              <i class="tim-icons icon-simple-remove text-white"></i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Verification Code</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-key-25"></i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Enter the code you received"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-info my-4">Verify</button>
               </div>
             </form>
           </div>
@@ -329,13 +524,31 @@
           <div class="col-md-3">
             <h3 class="title">Follow us:</h3>
             <div class="btn-wrapper profile">
-              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+              <a
+                target="_blank"
+                href="https://twitter.com/creativetim"
+                class="btn btn-icon btn-neutral btn-round btn-simple"
+                data-toggle="tooltip"
+                data-original-title="Follow us"
+              >
                 <i class="fab fa-twitter"></i>
               </a>
-              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/creativetim"
+                class="btn btn-icon btn-neutral btn-round btn-simple"
+                data-toggle="tooltip"
+                data-original-title="Like us"
+              >
                 <i class="fab fa-facebook-square"></i>
               </a>
-              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+              <a
+                target="_blank"
+                href="https://dribbble.com/creativetim"
+                class="btn btn-icon btn-neutral  btn-round btn-simple"
+                data-toggle="tooltip"
+                data-original-title="Follow us"
+              >
                 <i class="fab fa-dribbble"></i>
               </a>
             </div>
@@ -343,25 +556,44 @@
         </div>
       </div>
     </footer>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-  <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!-- Chart JS -->
-  <script src="./assets/js/plugins/chartjs.min.js"></script>
-  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-  <script src="./assets/js/plugins/moment.min.js"></script>
-  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-  <script src="./assets/demo/demo.js"></script>
-  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
-</body>
 
+    <!--   Core JS Files   -->
+    <script
+      src="./assets/js/core/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/js/core/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script
+      src="./assets/js/plugins/nouislider.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Chart JS -->
+    <script src="./assets/js/plugins/chartjs.min.js"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <script
+      src="./assets/js/plugins/bootstrap-datetimepicker.js"
+      type="text/javascript"
+    ></script>
+    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+    <script src="./assets/demo/demo.js"></script>
+    <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+    <script
+      src="./assets/js/blk-design-system.min.js?v=1.0.0"
+      type="text/javascript"
+    ></script>
+    <!--verifications JS-->
+    <script src="./assets/js/verification.js" type="text/javascript"></script>
+  </body>
 </html>

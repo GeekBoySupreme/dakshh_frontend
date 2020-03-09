@@ -28,6 +28,19 @@
   background: #555;
 }
 
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.verify-btn {
+  color: #f5365c;
+}
+
+.verify-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 :root {
   --blue: #5e72e4;
   --indigo: #151327;
