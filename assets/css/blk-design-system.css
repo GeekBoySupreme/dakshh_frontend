@@ -32,6 +32,8 @@
   overflow: auto !important;
 }
 
+
+
 .verify-btn {
   color: #f5365c;
 }
@@ -39,6 +41,11 @@
 .verify-btn:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.team-options:hover {
+  cursor: pointer;
+  color: #8965e0;
 }
 
 :root {

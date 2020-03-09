@@ -121,7 +121,7 @@
         <div class="container align-items-center">
           <div class="row">
             <!--PROFILE INFO GOES HERE-->
-            <div class="col-lg-5 col-md-6 ml-auto mr-auto">
+            <div class="col-lg-5 col-md-6 mr-auto">
               <div class="card">
                 <div class="card-header">
                   <div class="card-image">
@@ -190,108 +190,92 @@
             </div>
 
             <!--TEAMS GO HERE-->
-            <div class="col-lg-6 col-md-6">
-              <h1 class="profile-title text-left">Mike Scheinder</h1>
-              <p>&nbsp;</p>
-              <h5 class="text-on-back">01</h5>
-              <p class="profile-description">
-                Offices parties lasting outward nothing age few resolve.
-                Impression to discretion understood to we interested he
-                excellence. Him remarkably use projection collecting. Going
-                about eat forty world has round miles.
-              </p>
-              <div class="btn-wrapper profile pt-3">
-                <a
-                  target="_blank"
-                  href="https://twitter.com/creativetim"
-                  class="btn btn-icon btn-twitter btn-round"
-                  data-toggle="tooltip"
-                  data-original-title="Follow us"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/creativetim"
-                  class="btn btn-icon btn-facebook btn-round"
-                  data-toggle="tooltip"
-                  data-original-title="Like us"
-                >
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://dribbble.com/creativetim"
-                  class="btn btn-icon btn-dribbble  btn-round"
-                  data-toggle="tooltip"
-                  data-original-title="Follow us"
-                >
-                  <i class="fab fa-dribbble"></i>
-                </a>
+            <div class="col-lg-6 col-md-6 ml-auto">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <h3 class="title">Your Teams</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive overflow-auto">
+                    <table class="table tablesorter" id="plain-table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Team Name</th>
+                          <th>Members</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">1</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Team 1</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">3</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">
+                              <span
+                                class="team-options"
+                                data-toggle="modal"
+                                data-target="#teamModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="View team details"
+                                  class="fa fa-eye"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#warningModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Delete Team"
+                                  class="fa fa-trash"
+                                ></i>
+                              </span>
+                            </h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-plain">
+                <h3>Create Team</h3>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter team name"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-round float-right"
+                      data-placement="right"
+                    >
+                      Create
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section>
-        <div class="container">
-          <div class="create-teams">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card card-plain">
-                  <h3>Create Team</h3>
-                  <div class="card-body">
-                    <form>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          value="Create Team"
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn btn-primary btn-round float-right"
-                        rel="tooltip"
-                        data-original-title="Can't wait for your message"
-                        data-placement="right"
-                      >
-                        Create
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="card card-plain">
-                  <h3>Join Team</h3>
-                  <div class="card-body">
-                    <form>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          value="Join Team"
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn btn-primary btn-round float-right"
-                        rel="tooltip"
-                        data-original-title="Can't wait for your message"
-                        data-placement="right"
-                      >
-                        Join
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section>
         <div class="container">
@@ -309,26 +293,49 @@
             </div>
 
             <div class="col-md-6">
-              <p>&nbsp;</p>
-              <div class="pl-md-5">
-                <h1>Large Achivements</h1>
-
-                <p>
-                  I should be capable of drawing a single stroke at the present
-                  moment; and yet I feel that I never was a greater artist than
-                  now.
-                </p>
-                <br />
-                <p>
-                  When, while the lovely valley teems with vapour around me, and
-                  the meridian sun strikes the upper surface of the impenetrable
-                  foliage of my trees, and but a few stray.
-                </p>
-                <br />
-                <a href="#" class="font-weight-bold text-info mt-5"
-                  >Events <i class="tim-icons icon-minimal-right text-info"></i
-                ></a>
-                <p>&nbsp;</p>
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <h3 class="title">Your Events</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive overflow-auto">
+                    <table class="table tablesorter" id="plain-table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Event Name</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">1</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Event 1</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">26/03/2020</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">
+                              <a href=""
+                                ><i
+                                  rel="tooltip"
+                                  data-original-title="View event details"
+                                  class="fa fa-eye"
+                                ></i
+                              ></a>
+                            </h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -447,6 +454,83 @@
                 <button type="button" class="btn btn-info my-4">Verify</button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+    <!--Team Modal -->
+    <div
+      class="modal fade modal-black"
+      id="teamModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="teamModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              <i class="tim-icons icon-simple-remove text-white"></i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Team Info</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-6 text-right">
+                <h4>Team Name :</h4>
+                <h4>Team Lead :</h4>
+                <h4>No.of Members :</h4>
+              </div>
+              <div class="col-6 text-left">
+                <h4>Team 1</h4>
+                <h4>John Doe</h4>
+                <h4>3</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+    <!-- Warning Modal -->
+    <div
+      class="modal fade modal-black"
+      id="warningModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="warningModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              <i class="tim-icons icon-simple-remove text-white"></i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Are you sure?</h3>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="button" class="btn btn-danger my-4">Yes</button>
+            <button type="button" class="btn btn-info my-4">No</button>
           </div>
         </div>
       </div>
