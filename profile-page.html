@@ -243,6 +243,17 @@
                                   class="fa fa-trash"
                                 ></i>
                               </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#addMemberModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Add Team Member"
+                                  class="fa fa-plus"
+                                ></i>
+                              </span>
                             </h4>
                           </td>
                         </tr>
@@ -482,6 +493,53 @@
                 <h4>3</h4>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal -->
+
+    <!--Add Member Modal -->
+    <div
+      class="modal fade modal-black"
+      id="addMemberModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addMemberModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              <i class="tim-icons icon-simple-remove text-white"></i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Email ID of the member</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email ID of the member to be added"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-round float-right"
+                data-placement="right"
+              >
+                Send Invite
+              </button>
+            </form>
           </div>
         </div>
       </div>
