@@ -191,20 +191,41 @@
 
             <!--TEAMS GO HERE-->
             <div class="col-lg-6 col-md-6 ml-auto">
+              <!--CREATE TEAM -->
+              <div class="card card-plain">
+                <h3>Create Team</h3>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter team name"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-round float-right"
+                      data-placement="right"
+                    >
+                      Create
+                    </button>
+                  </form>
+                </div>
+              </div>
               <div class="card">
                 <div class="card-header">
                   <div class="card-image">
                     <h3 class="title">Your Teams</h3>
                   </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body" id="teamTableCard">
                   <div class="table-responsive">
                     <table class="table tablesorter" id="plain-table">
                       <thead>
                         <tr>
                           <th>#</th>
                           <th>Team Name</th>
-                          <th>Members</th>
                           <th>Options</th>
                         </tr>
                       </thead>
@@ -216,9 +237,145 @@
                           <td>
                             <h4 class="title text-left">Team 1</h4>
                           </td>
+
+                          <td>
+                            <h4 class="title text-left">
+                              <span
+                                class="team-options"
+                                data-toggle="modal"
+                                data-target="#teamModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="View team details"
+                                  class="fa fa-eye"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#warningModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Delete Team"
+                                  class="fa fa-trash"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#addMemberModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Add Team Member"
+                                  class="fa fa-plus"
+                                ></i>
+                              </span>
+                            </h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">2</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Team 2</h4>
+                          </td>
+
+                          <td>
+                            <h4 class="title text-left">
+                              <span
+                                class="team-options"
+                                data-toggle="modal"
+                                data-target="#teamModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="View team details"
+                                  class="fa fa-eye"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#warningModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Delete Team"
+                                  class="fa fa-trash"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#addMemberModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Add Team Member"
+                                  class="fa fa-plus"
+                                ></i>
+                              </span>
+                            </h4>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>
                             <h4 class="title text-left">3</h4>
                           </td>
+                          <td>
+                            <h4 class="title text-left">Team 3</h4>
+                          </td>
+
+                          <td>
+                            <h4 class="title text-left">
+                              <span
+                                class="team-options"
+                                data-toggle="modal"
+                                data-target="#teamModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="View team details"
+                                  class="fa fa-eye"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#warningModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Delete Team"
+                                  class="fa fa-trash"
+                                ></i>
+                              </span>
+                              <span
+                                class="team-options ml-2"
+                                data-toggle="modal"
+                                data-target="#addMemberModal"
+                              >
+                                <i
+                                  rel="tooltip"
+                                  data-original-title="Add Team Member"
+                                  class="fa fa-plus"
+                                ></i>
+                              </span>
+                            </h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">4</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Team 4</h4>
+                          </td>
+
                           <td>
                             <h4 class="title text-left">
                               <span
@@ -262,27 +419,6 @@
                   </div>
                 </div>
               </div>
-              <div class="card card-plain">
-                <h3>Create Team</h3>
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter team name"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-round float-right"
-                      data-placement="right"
-                    >
-                      Create
-                    </button>
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -306,7 +442,7 @@
                     <h3 class="title">Registered Events</h3>
                   </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body" id="eventTableCard">
                   <div class="table-responsive">
                     <table class="table tablesorter" id="plain-table">
                       <thead>
@@ -326,6 +462,50 @@
                           </td>
                           <td>
                             <h4 class="title text-left">Team 1</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">2</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Event 2</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Individual</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">3</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Event 3</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Individual</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">4</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Event 4</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Individual</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="title text-left">5</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Event 5</h4>
+                          </td>
+                          <td>
+                            <h4 class="title text-left">Individual</h4>
                           </td>
                         </tr>
                       </tbody>
@@ -491,6 +671,19 @@
                 <h4>Team 1</h4>
                 <h4>John Doe</h4>
                 <h4>3</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <h4>Members :</h4>
+              </div>
+              <div class="col-6 text-left">
+                <ul>
+                  <li>Member 1</li>
+                  <li>Member 2</li>
+                  <li>Member 3</li>
+                  <li>Member 4</li>
+                </ul>
               </div>
             </div>
           </div>

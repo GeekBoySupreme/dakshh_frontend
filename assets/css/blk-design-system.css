@@ -32,8 +32,6 @@
   color: #f5365c;
 }
 
-
-
 .verify-btn:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -44,6 +42,16 @@
   color: #8965e0;
 }
 
+#teamTableCard,
+#eventTableCard {
+  height: 400px;
+  overflow: auto;
+}
+
+#teamTableCard .table-responsive,
+#eventTableCard .table-responsive {
+  overflow: hidden;
+}
 :root {
   --blue: #5e72e4;
   --indigo: #151327;
